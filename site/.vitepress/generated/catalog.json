@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-11T08:37:05.993Z",
+  "generatedAt": "2026-02-11T09:01:50.994Z",
   "items": [
     {
       "title": "LLM 概览",
@@ -23,18 +23,6 @@
         "concurrency"
       ],
       "summary": "理解 goroutine 与 channel 如何协同执行任务。",
-      "order": 1
-    },
-    {
-      "title": "Go 进阶",
-      "path": "/go/1）只写到 OS 页缓存、还没刷到磁盘：会不会丢？/",
-      "category": "go",
-      "date": "2026-02-02",
-      "tags": [
-        "go",
-        "basics"
-      ],
-      "summary": "测试数据与零值与声明方式的速查笔记。",
       "order": 1
     },
     {
