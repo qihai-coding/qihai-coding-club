@@ -1,0 +1,91 @@
+:root {
+  --catalog-border: var(--vp-c-divider);
+  --catalog-card-bg: color-mix(in srgb, var(--vp-c-bg-soft) 85%, transparent);
+  --catalog-muted: var(--vp-c-text-2);
+}
+
+.catalog-home {
+  margin-top: 1.5rem;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.catalog-card {
+  border: 1px solid var(--catalog-border);
+  background: var(--catalog-card-bg);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.catalog-card h3 {
+  margin: 0 0 0.75rem;
+}
+
+.catalog-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.catalog-card li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.catalog-card a {
+  font-weight: 500;
+}
+
+.catalog-card small {
+  color: var(--catalog-muted);
+  white-space: nowrap;
+}
+
+.catalog-recent {
+  margin-top: 1.5rem;
+  border: 1px solid var(--catalog-border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.catalog-recent ul {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.catalog-recent li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.catalog-recent small {
+  color: var(--catalog-muted);
+  white-space: nowrap;
+}
+
+.mermaid {
+  overflow-x: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--catalog-border);
+  border-radius: 12px;
+  background: var(--vp-c-bg-soft);
+}
+
+.mermaid svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

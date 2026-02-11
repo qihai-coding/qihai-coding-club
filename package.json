@@ -1,0 +1,23 @@
+{
+  "name": "learning-notes-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Static learning notes site powered by VitePress and Markdown.",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "content:check": "node scripts/validate-frontmatter.mjs",
+    "content:gen": "node scripts/generate-content.mjs",
+    "docs:dev": "npm run content:gen && vitepress dev site",
+    "docs:build": "npm run content:check && npm run content:gen && vitepress build site",
+    "docs:preview": "vitepress preview site"
+  },
+  "devDependencies": {
+    "fast-glob": "^3.3.3",
+    "gray-matter": "^4.0.3",
+    "mermaid": "^11.4.1",
+    "vitepress": "^1.6.3"
+  }
+}

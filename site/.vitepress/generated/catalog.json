@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-02-11T08:20:04.363Z",
+  "items": [
+    {
+      "title": "LLM 概览",
+      "path": "/ai/llm-overview/",
+      "category": "ai",
+      "date": "2026-02-05",
+      "tags": [
+        "ai",
+        "llm"
+      ],
+      "summary": "梳理大模型核心概念与检索增强生成流程。",
+      "order": 1
+    },
+    {
+      "title": "Goroutine 入门",
+      "path": "/go/concurrency/goroutine/",
+      "category": "go",
+      "date": "2026-02-03",
+      "tags": [
+        "go",
+        "concurrency"
+      ],
+      "summary": "理解 goroutine 与 channel 如何协同执行任务。",
+      "order": 1
+    },
+    {
+      "title": "Go 基础类型",
+      "path": "/go/basic-types/",
+      "category": "go",
+      "date": "2026-02-01",
+      "tags": [
+        "go",
+        "basics"
+      ],
+      "summary": "内置类型、零值与声明方式的速查笔记。",
+      "order": 1
+    },
+    {
+      "title": "HTTP 基础",
+      "path": "/web/http-basics/",
+      "category": "web",
+      "date": "2026-02-02",
+      "tags": [
+        "web",
+        "http"
+      ],
+      "summary": "日常 Web 开发中请求与响应的关键知识点。",
+      "order": 1
+    }
+  ]
+}
