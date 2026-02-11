@@ -9,6 +9,10 @@ const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   "/go/": [
     {
+      "text": "Go 进阶",
+      "link": "/go/1）只写到 OS 页缓存、还没刷到磁盘：会不会丢？/"
+    },
+    {
       "text": "Go 基础类型",
       "link": "/go/basic-types/"
     },
