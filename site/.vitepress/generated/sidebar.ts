@@ -1,32 +1,30 @@
 import type { DefaultTheme } from 'vitepress'
 
 const sidebar: DefaultTheme.Config['sidebar'] = {
-  "/ai/": [
+  "/kafka/": [
     {
-      "text": "LLM 概览",
-      "link": "/ai/llm-overview/"
-    }
-  ],
-  "/go/": [
-    {
-      "text": "Go 基础类型",
-      "link": "/go/basic-types/"
+      "text": "Kafka 概览",
+      "link": "/kafka/overview"
     },
     {
-      "text": "并发",
-      "collapsed": false,
-      "items": [
-        {
-          "text": "Goroutine 入门",
-          "link": "/go/concurrency/goroutine/"
-        }
-      ]
-    }
-  ],
-  "/web/": [
+      "text": "Topic / Partition / Offset 模型",
+      "link": "/kafka/topic-partition"
+    },
     {
-      "text": "HTTP 基础",
-      "link": "/web/http-basics/"
+      "text": "Producer 基础",
+      "link": "/kafka/producer-basics"
+    },
+    {
+      "text": "Consumer Group 基础",
+      "link": "/kafka/consumer-group"
+    },
+    {
+      "text": "副本机制与 ISR",
+      "link": "/kafka/replication-isr"
+    },
+    {
+      "text": "消息投递语义",
+      "link": "/kafka/delivery-semantics"
     }
   ]
 }

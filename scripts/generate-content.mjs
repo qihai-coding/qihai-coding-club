@@ -29,8 +29,11 @@ function normalizePath(filePath) {
 
 function markdownToRoute(relativePath) {
   const normalized = normalizePath(relativePath).replace(/\.md$/i, '')
-  let route = `/${normalized}/`
-  route = route.replace(/\/index\/$/, '/')
+  let route = `/${normalized}`
+  route = route.replace(/\/index$/, '/')
+  if (route !== '/' && route.endsWith('/')) {
+    route = route.slice(0, -1)
+  }
   return route
 }
 

@@ -2,8 +2,9 @@ import { defineConfig } from 'vitepress'
 
 import sidebar from './generated/sidebar'
 
-const repositoryName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? ''
-const isGitHubActions = process.env.GITHUB_ACTIONS === 'true'
+const env = (globalThis as { process?: { env?: Record<string, string | undefined> } }).process?.env ?? {}
+const repositoryName = env.GITHUB_REPOSITORY?.split('/')[1] ?? ''
+const isGitHubActions = env.GITHUB_ACTIONS === 'true'
 const isUserOrOrgSite = repositoryName.endsWith('.github.io')
 
 const base = isGitHubActions && repositoryName && !isUserOrOrgSite ? `/${repositoryName}/` : '/'
@@ -18,9 +19,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Go 笔记', link: '/go/basic-types/' },
-      { text: 'Web 笔记', link: '/web/http-basics/' },
-      { text: 'AI 笔记', link: '/ai/llm-overview/' }
+      { text: 'Kafka 笔记', link: '/kafka/overview' }
     ],
     sidebar,
     outlineTitle: '本页目录',

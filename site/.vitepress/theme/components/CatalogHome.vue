@@ -20,7 +20,8 @@ function formatCategory(value: string): string {
   const dictionary: Record<string, string> = {
     ai: 'AI',
     go: 'Go',
-    web: 'Web'
+    web: 'Web',
+    kafka: 'Kafka'
   }
 
   if (dictionary[value]) {

@@ -1,53 +1,77 @@
 {
-  "generatedAt": "2026-02-11T09:01:50.994Z",
+  "generatedAt": "2026-02-24T09:44:32.790Z",
   "items": [
     {
-      "title": "LLM 概览",
-      "path": "/ai/llm-overview/",
-      "category": "ai",
-      "date": "2026-02-05",
+      "title": "Kafka 概览",
+      "path": "/kafka/overview",
+      "category": "kafka",
+      "date": "2026-02-24",
       "tags": [
-        "ai",
-        "llm"
-      ],
-      "summary": "梳理大模型核心概念与检索增强生成流程。",
-      "order": 1
-    },
-    {
-      "title": "Goroutine 入门",
-      "path": "/go/concurrency/goroutine/",
-      "category": "go",
-      "date": "2026-02-03",
-      "tags": [
-        "go",
-        "concurrency"
-      ],
-      "summary": "理解 goroutine 与 channel 如何协同执行任务。",
-      "order": 1
-    },
-    {
-      "title": "Go 基础类型",
-      "path": "/go/basic-types/",
-      "category": "go",
-      "date": "2026-02-01",
-      "tags": [
-        "go",
+        "kafka",
         "basics"
       ],
-      "summary": "内置类型、零值与声明方式的速查笔记。",
+      "summary": "先建立 Kafka 的整体心智模型，理解它解决的问题和核心组件关系。",
       "order": 1
     },
     {
-      "title": "HTTP 基础",
-      "path": "/web/http-basics/",
-      "category": "web",
-      "date": "2026-02-02",
+      "title": "Topic / Partition / Offset 模型",
+      "path": "/kafka/topic-partition",
+      "category": "kafka",
+      "date": "2026-02-24",
       "tags": [
-        "web",
-        "http"
+        "kafka",
+        "data-model"
       ],
-      "summary": "日常 Web 开发中请求与响应的关键知识点。",
-      "order": 1
+      "summary": "理解 Kafka 的数据组织模型，这是后续顺序性、扩展性和消费语义的基础。",
+      "order": 2
+    },
+    {
+      "title": "Producer 基础",
+      "path": "/kafka/producer-basics",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "producer"
+      ],
+      "summary": "生产者发送链路与关键参数，理解吞吐、延迟和可靠性的取舍。",
+      "order": 3
+    },
+    {
+      "title": "Consumer Group 基础",
+      "path": "/kafka/consumer-group",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "consumer"
+      ],
+      "summary": "消费者组如何实现横向扩展，以及位移提交与再均衡机制。",
+      "order": 4
+    },
+    {
+      "title": "副本机制与 ISR",
+      "path": "/kafka/replication-isr",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "replication"
+      ],
+      "summary": "Kafka 如何通过 Leader/Follower 与 ISR 保障可用性和数据可靠性。",
+      "order": 5
+    },
+    {
+      "title": "消息投递语义",
+      "path": "/kafka/delivery-semantics",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "semantics"
+      ],
+      "summary": "理解 at-most-once、at-least-once、exactly-once 的实现方式与边界。",
+      "order": 6
     }
   ]
 }
