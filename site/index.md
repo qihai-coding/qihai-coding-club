@@ -6,7 +6,7 @@ hero:
   actions:
     - theme: brand
       text: 开始 Kafka 学习
-      link: /kafka/overview
+      link: /kafka/01-foundation/overview
 ---
 
 ## 笔记目录

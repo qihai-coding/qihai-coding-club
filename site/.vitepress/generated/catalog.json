@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-02-24T10:26:49.762Z",
+  "generatedAt": "2026-02-24T10:38:48.330Z",
   "items": [
     {
       "title": "Kafka 概览",
-      "path": "/kafka/overview",
+      "path": "/kafka/01-foundation/overview",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -15,7 +15,7 @@
     },
     {
       "title": "Topic / Partition / Offset 模型",
-      "path": "/kafka/topic-partition",
+      "path": "/kafka/01-foundation/topic-partition",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -27,7 +27,7 @@
     },
     {
       "title": "Producer 基础",
-      "path": "/kafka/producer-basics",
+      "path": "/kafka/01-foundation/producer-basics",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -39,7 +39,7 @@
     },
     {
       "title": "Consumer Group 基础",
-      "path": "/kafka/consumer-group",
+      "path": "/kafka/01-foundation/consumer-group",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -51,7 +51,7 @@
     },
     {
       "title": "副本机制与 ISR",
-      "path": "/kafka/replication-isr",
+      "path": "/kafka/01-foundation/replication-isr",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -63,7 +63,7 @@
     },
     {
       "title": "消息投递语义",
-      "path": "/kafka/delivery-semantics",
+      "path": "/kafka/01-foundation/delivery-semantics",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -75,7 +75,7 @@
     },
     {
       "title": "顺序性与分区键设计",
-      "path": "/kafka/ordering-and-key",
+      "path": "/kafka/02-advanced/ordering-and-key",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -87,7 +87,7 @@
     },
     {
       "title": "性能调优实战",
-      "path": "/kafka/performance-tuning",
+      "path": "/kafka/02-advanced/performance-tuning",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -99,7 +99,7 @@
     },
     {
       "title": "运维与监控清单",
-      "path": "/kafka/operations-and-monitoring",
+      "path": "/kafka/02-advanced/operations-and-monitoring",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -111,7 +111,7 @@
     },
     {
       "title": "常见坑位与排查思路",
-      "path": "/kafka/common-pitfalls",
+      "path": "/kafka/02-advanced/common-pitfalls",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -123,7 +123,7 @@
     },
     {
       "title": "事务与 EOS 边界",
-      "path": "/kafka/transactions-and-eos-boundary",
+      "path": "/kafka/03-engineering/transactions-and-eos-boundary",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -135,7 +135,7 @@
     },
     {
       "title": "Rebalance 优化",
-      "path": "/kafka/rebalance-optimization",
+      "path": "/kafka/03-engineering/rebalance-optimization",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -147,7 +147,7 @@
     },
     {
       "title": "多租户隔离设计",
-      "path": "/kafka/multi-tenant-isolation",
+      "path": "/kafka/03-engineering/multi-tenant-isolation",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -159,7 +159,7 @@
     },
     {
       "title": "容量规划方法",
-      "path": "/kafka/capacity-planning",
+      "path": "/kafka/03-engineering/capacity-planning",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -171,7 +171,7 @@
     },
     {
       "title": "实战案例：下单事件链路",
-      "path": "/kafka/order-pipeline-case",
+      "path": "/kafka/04-cases/order-pipeline-case",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -183,7 +183,7 @@
     },
     {
       "title": "实战案例：库存扣减链路",
-      "path": "/kafka/inventory-deduction-case",
+      "path": "/kafka/04-cases/inventory-deduction-case",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -195,7 +195,7 @@
     },
     {
       "title": "实战案例：延迟重试与死信队列",
-      "path": "/kafka/delay-retry-and-dlq-case",
+      "path": "/kafka/04-cases/delay-retry-and-dlq-case",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -207,7 +207,7 @@
     },
     {
       "title": "实战案例：消息回放与补数",
-      "path": "/kafka/replay-and-backfill-case",
+      "path": "/kafka/04-cases/replay-and-backfill-case",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [
@@ -219,7 +219,7 @@
     },
     {
       "title": "实战案例：迁移与切流",
-      "path": "/kafka/migration-and-cutover-case",
+      "path": "/kafka/04-cases/migration-and-cutover-case",
       "category": "kafka",
       "date": "2026-02-24",
       "tags": [

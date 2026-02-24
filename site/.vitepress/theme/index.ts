@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import { inBrowser } from 'vitepress'
+import type { Theme } from 'vitepress'
 import mermaid from 'mermaid'
 
 import CatalogHome from './components/CatalogHome.vue'
@@ -20,9 +21,6 @@ function renderMermaid() {
     mermaidInitialized = true
   }
 
-  // VitePress + Shiki renders fenced mermaid blocks as:
-  // <div class="language-mermaid"> ... <pre><code>...</code></pre> ... </div>
-  // so we convert the whole wrapper instead of only <pre>.
   const wrappers = document.querySelectorAll<HTMLElement>('div.language-mermaid')
   for (const wrapper of wrappers) {
     const code = wrapper.querySelector('pre code')
@@ -36,7 +34,6 @@ function renderMermaid() {
     wrapper.replaceWith(container)
   }
 
-  // Fallback for any non-Shiki markdown pipeline.
   const rawBlocks = document.querySelectorAll<HTMLElement>('pre code.language-mermaid')
   for (const code of rawBlocks) {
     const pre = code.parentElement
@@ -54,7 +51,7 @@ function renderMermaid() {
   })
 }
 
-export default {
+const theme: Theme = {
   extends: DefaultTheme,
   enhanceApp({ app, router }) {
     app.component('CatalogHome', CatalogHome)
@@ -74,3 +71,5 @@ export default {
     })
   }
 }
+
+export default theme

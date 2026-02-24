@@ -19,7 +19,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Kafka 笔记', link: '/kafka/overview' }
+      { text: 'Kafka 笔记', link: '/kafka/01-foundation/overview' }
     ],
     sidebar,
     outlineTitle: '本页目录',

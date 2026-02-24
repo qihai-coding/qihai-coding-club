@@ -75,7 +75,11 @@ function compareNotes(left, right) {
 
 function formatSegment(segment) {
   const dictionary = {
-    concurrency: '并发'
+    concurrency: '并发',
+    '01-foundation': '01 基础篇',
+    '02-advanced': '02 进阶篇',
+    '03-engineering': '03 工程篇',
+    '04-cases': '04 实战篇'
   }
 
   const direct = dictionary[segment.toLowerCase()]
