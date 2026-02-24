@@ -20,13 +20,29 @@ function renderMermaid() {
     mermaidInitialized = true
   }
 
-  const blocks = document.querySelectorAll<HTMLElement>('pre code.language-mermaid')
-  for (const code of blocks) {
+  // VitePress + Shiki renders fenced mermaid blocks as:
+  // <div class="language-mermaid"> ... <pre><code>...</code></pre> ... </div>
+  // so we convert the whole wrapper instead of only <pre>.
+  const wrappers = document.querySelectorAll<HTMLElement>('div.language-mermaid')
+  for (const wrapper of wrappers) {
+    const code = wrapper.querySelector('pre code')
+    if (!code) {
+      continue
+    }
+
+    const container = document.createElement('div')
+    container.className = 'mermaid'
+    container.textContent = code.textContent ?? ''
+    wrapper.replaceWith(container)
+  }
+
+  // Fallback for any non-Shiki markdown pipeline.
+  const rawBlocks = document.querySelectorAll<HTMLElement>('pre code.language-mermaid')
+  for (const code of rawBlocks) {
     const pre = code.parentElement
     if (!pre) {
       continue
     }
-
     const container = document.createElement('div')
     container.className = 'mermaid'
     container.textContent = code.textContent ?? ''
