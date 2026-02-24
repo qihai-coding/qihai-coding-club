@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-24T09:44:32.790Z",
+  "generatedAt": "2026-02-24T09:52:27.999Z",
   "items": [
     {
       "title": "Kafka 概览",
@@ -72,6 +72,162 @@
       ],
       "summary": "理解 at-most-once、at-least-once、exactly-once 的实现方式与边界。",
       "order": 6
+    },
+    {
+      "title": "顺序性与分区键设计",
+      "path": "/kafka/ordering-and-key",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "ordering"
+      ],
+      "summary": "通过 key 与分区策略设计，平衡业务顺序性、并行度与热点风险。",
+      "order": 7
+    },
+    {
+      "title": "性能调优实战",
+      "path": "/kafka/performance-tuning",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "performance"
+      ],
+      "summary": "围绕吞吐、延迟与稳定性目标，给出 Producer、Consumer、Broker 的调优抓手。",
+      "order": 8
+    },
+    {
+      "title": "运维与监控清单",
+      "path": "/kafka/operations-and-monitoring",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "operations"
+      ],
+      "summary": "用一套可执行的监控与巡检清单，尽早发现 Kafka 集群风险并快速定位问题。",
+      "order": 9
+    },
+    {
+      "title": "常见坑位与排查思路",
+      "path": "/kafka/common-pitfalls",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "troubleshooting"
+      ],
+      "summary": "汇总 Kafka 项目里高频踩坑场景，并给出一线可执行的排查顺序。",
+      "order": 10
+    },
+    {
+      "title": "事务与 EOS 边界",
+      "path": "/kafka/transactions-and-eos-boundary",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "transaction"
+      ],
+      "summary": "明确 Kafka exactly-once 的适用边界，避免在跨系统场景中错误假设“天然不重不丢”。",
+      "order": 11
+    },
+    {
+      "title": "Rebalance 优化",
+      "path": "/kafka/rebalance-optimization",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "rebalance"
+      ],
+      "summary": "降低消费者组重平衡带来的抖动与停顿，提升消费稳定性。",
+      "order": 12
+    },
+    {
+      "title": "多租户隔离设计",
+      "path": "/kafka/multi-tenant-isolation",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "multi-tenant"
+      ],
+      "summary": "在共享集群下实现租户间的配额、命名与权限隔离，降低相互影响。",
+      "order": 13
+    },
+    {
+      "title": "容量规划方法",
+      "path": "/kafka/capacity-planning",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "capacity"
+      ],
+      "summary": "通过吞吐、保留周期和副本因子估算 Kafka 集群容量，避免上线后被动扩容。",
+      "order": 14
+    },
+    {
+      "title": "实战案例：下单事件链路",
+      "path": "/kafka/order-pipeline-case",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "case-study"
+      ],
+      "summary": "以电商下单流程为例，设计从订单创建到多服务消费的事件驱动链路。",
+      "order": 15
+    },
+    {
+      "title": "实战案例：库存扣减链路",
+      "path": "/kafka/inventory-deduction-case",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "case-study"
+      ],
+      "summary": "设计高并发库存扣减链路，兼顾一致性、幂等和可恢复性。",
+      "order": 16
+    },
+    {
+      "title": "实战案例：延迟重试与死信队列",
+      "path": "/kafka/delay-retry-and-dlq-case",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "retry"
+      ],
+      "summary": "构建分层重试与死信机制，避免异常消息拖垮主消费链路。",
+      "order": 17
+    },
+    {
+      "title": "实战案例：消息回放与补数",
+      "path": "/kafka/replay-and-backfill-case",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "replay"
+      ],
+      "summary": "在生产环境安全执行 Kafka 回放与补数，修复历史数据而不放大事故。",
+      "order": 18
+    },
+    {
+      "title": "实战案例：迁移与切流",
+      "path": "/kafka/migration-and-cutover-case",
+      "category": "kafka",
+      "date": "2026-02-24",
+      "tags": [
+        "kafka",
+        "migration"
+      ],
+      "summary": "设计 Kafka 集群迁移和灰度切流方案，降低停机和数据丢失风险。",
+      "order": 19
     }
   ]
 }
